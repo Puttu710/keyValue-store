@@ -92,7 +92,7 @@ HEARTBEAT MESSAGE:
             
                       Heart beat message is used to monitor whether slave is alive.
 
-	In a particular interval slave servers send a dummy message or notification to 	main server. When server senses that for any slave server’s heart beat is not updated, it gets to know that this slave server is down and it can not commit or update any value which were supposed to store in the same slave server.
+In a particular interval slave servers send a dummy message or notification to 	main server. When server senses that for any slave server’s heart beat is not updated, it gets to know that this slave server is down and it can not commit or update any value which were supposed to store in the same slave server.
 
 
 I.        We have used UDP connection to maintain heart beat messages(reason behind this is: server need not to reply for each heart beat message but only updation at server side is good enough).
